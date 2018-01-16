@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Mind Hacrz | HtmlPlus</title>
+</head>
+<body>
+
+
+
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">About</a>		
+  <a href="#">Services</a>		
+  <a href="#">Clients</a>		
+  <a href="#">Contact</a>			
+</div>
+
+ <center><div class="mind">
+	<img src="images/123.png">
+</div></center>
+
+
+
+
+
+<body onload="myFunction()" style="margin:0;">
+<div class="main">
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <h1>MIND HACRZ</h1>
+  <p>We are an organization based on HTML,CSS AND JAVASCRIPT.</p>
+   <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>
+</div>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>
